@@ -65,18 +65,20 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiMapMarker } from '@mdi/js';
 import { ref } from 'vue';
 
 const products = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]);
 const carouselNext = () => {
-    document.querySelector('.p-carousel-next').click();
+    let carouselNext = document.querySelector('.p-carousel-next') as any;
+    carouselNext.click();
 }
 
 const carouselPrev = () => {
-    document.querySelector('.p-carousel-prev').click();
+    let carouselPrev = document.querySelector('.p-carousel-prev') as any;
+    carouselPrev.click();
 }
 
 const responsiveOptions = ref([
