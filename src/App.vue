@@ -33,7 +33,7 @@
   </Dialog>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import headerLayout from '@/layouts/header/header.vue';
 import footerLayout from '@/layouts/footer/footer.vue';
 import { ref } from 'vue';
